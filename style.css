@@ -1,10 +1,30 @@
-/* .calculadora {
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ 
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+
+ .calculadora {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    background-color: #566977;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 45px;
+    margin: 10px;
+}
     
     .div1 { grid-area: 5 / 1 / 6 / 2; }
     .div2 { grid-area: 5 / 2 / 6 / 3; }
@@ -23,8 +43,40 @@
     .div15 { grid-area: 2 / 3 / 3 / 4; }
     .div16 { grid-area: 2 / 4 / 3 / 5; }
     .div17 { grid-area: 3 / 4 / 7 / 5; }
-    .div18 { grid-area: 1 / 1 / 2 / 5; } */
+    .div18 { grid-area: 1 / 1 / 2 / 5; } 
 
 .active{
     background-color: red;
+}
+
+.operador{
+    background-color: #839DB1;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.num, .decimal, .borrar {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+.igual {
+    background-color: #FFD75B;
+    color: #566977;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+}
+
+.display{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 35px;
 }
